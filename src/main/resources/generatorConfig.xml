@@ -6,7 +6,7 @@
     <classPathEntry location="E:\ideajar\mysql-connector-java-5.1.48.jar"/> <!--E:/java/maven/repository/mysql/mysql-connector-java/5.1.38/-->
     <context id="context1">
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/maskmanage"
-                        userId="root" password="serendipity777"/><!--数据库连接-->
+                        userId="root" password="***"/><!--数据库连接-->
         <!--生成Model类存放位置-->
         <javaModelGenerator targetPackage="entity" targetProject="src/main/java/com/maskmanage">
             <property name="enableSubPackages" value="true"/>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!-- 配置mysql-connector-java的jar包地址 -->
+    <classPathEntry location="E:\ideajar\mysql-connector-java-5.1.48.jar"/> <!--E:/java/maven/repository/mysql/mysql-connector-java/5.1.38/-->
+    <context id="context1">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/maskmanage"
+                        userId="root" password="serendipity777"/><!--数据库连接-->
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="entity" targetProject="src/main/java/com/maskmanage">
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/java/com/maskmanage"><!--生成的mapper文件-->
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <javaClientGenerator targetPackage="mapper" targetProject="src/main/java/com/maskmanage" type="XMLMAPPER"><!--生成的dao层接口）-->
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <table schema="" tableName="admin" domainObjectName="admin"/>
+        <table schema="" tableName="column" domainObjectName="column"/>
+        <table schema="" tableName="data" domainObjectName="data"/>
+        <table schema="" tableName="donation" domainObjectName="donation"/>
+        <table schema="" tableName="donator" domainObjectName="donator"/>
+        <table schema="" tableName="donsupervision" domainObjectName="donsupervision"/>
+        <table schema="" tableName="express" domainObjectName="express"/>
+        <table schema="" tableName="hospital" domainObjectName="hospital"/>
+        <table schema="" tableName="hossupervision" domainObjectName="hossupervision"/>
+        <table schema="" tableName="news" domainObjectName="news"/>
+        <table schema="" tableName="requirement" domainObjectName="requirement"/>
+        <table schema="" tableName="resource" domainObjectName="resource"/>
+        <table schema="" tableName="storage" domainObjectName="storage"/>
+        <table schema="" tableName="supervisor" domainObjectName="supervisor"/>
+        <table schema="" tableName="usage" domainObjectName="usage"/>
+        <table schema="" tableName="user" domainObjectName="user"/>
+    </context>
+</generatorConfiguration>

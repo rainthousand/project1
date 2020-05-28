@@ -1,4 +1,4 @@
-package mapper;
+package com.maskmanage.mapper;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;

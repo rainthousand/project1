@@ -14,8 +14,7 @@
         http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
 
     <!--扫描Service里面的注解-->
-    <context:component-scan base-package="com.maskmanage.service"></context:component-scan>
-
+    <context:component-scan base-package="com.maskmanage.service"/>
 
     <!-- 数据库连接池配置文件Dao层 -->
     <!-- 加载配置文件 -->
@@ -37,7 +36,7 @@
     <!-- mapper扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描包路径，如果需要扫描多个包，中间使用半角逗号隔开  -->
-        <property name="basePackage" value="com.maskmanage.dao"/>
+        <property name="basePackage" value="com.maskmanage.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
     <!-- 事务管理器-->
